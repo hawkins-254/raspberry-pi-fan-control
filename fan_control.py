@@ -21,10 +21,10 @@ try:
       temp = get_pi_temp()
       if temp > on_temp and not fan.value:
          fan.on()
-         print(f"[{time.strftime('%X')}] CPU is {temp}°C: Fan turned ON")
+        ## print(f"[{time.strftime('%X')}] CPU is {temp}°C: Fan turned ON")
       elif temp <= off_temp and fan.value:
          fan.off()
-         print(f"[{time.strftime('%X')}] CPU is {temp}°C: Fan turned OFF")
+         ##print(f"[{time.strftime('%X')}] CPU is {temp}°C: Fan turned OFF")
       ##temp_log.append(temp)
       time.sleep(5)
 except KeyboardInterrupt:
